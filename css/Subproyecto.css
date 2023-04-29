@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(248, 208, 155);
+}
+#restotal1{
+    display: inline-block;
+}
+#restotal2{
+    display: inline-block;
+}
+#restotal{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    margin: 2px;
+}
+.factura{
+    display: flex;
+    justify-content: center;
+}
+#resname{
+    margin-right: 5px;
+}
+.totall1{
+    padding: 5px 15px;
+}
+.izq{
+    text-align: left;
+}
+.der{
+    text-align: right;
+}
+button{
+    background-color: black;
+    color: rgb(245, 175, 70);
+    margin-right: 15px;
+    padding: 7px 20px;
+    border-radius: 10px;
+}

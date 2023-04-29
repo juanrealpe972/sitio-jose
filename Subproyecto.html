@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Subproyecto.css">
+    <script src="js/Subproyecto.js"></script>
+</head>
+<body>
+
+        <h1 id="Sub">Nombre del subproyecto</h1>
+        <input type="text" id="name_product">
+        <p>
+            <h3>Producto 1</h3>
+            <input type="text" id="name_p1" placeholder="Nombre del producto1">
+            <input type="number" id="cantidad1" placeholder="Ingrese la cantidad">
+            <input type="number" id="valor1" placeholder="Ingrese el Valor">
+            <p id="restotal1"></p>
+        </p>
+        <p>
+            <h3>Producto 2</h3>
+            <input type="text" id="name_p2" placeholder="Nombre del producto2">
+            <input type="number" id="cantidad2" placeholder="Ingrese la cantidad">
+            <input type="number" id="valor2" placeholder="Ingrese el Valor">
+            <p id="restotal2"></p>
+        </p>
+    <hr>
+    <p id="restotal"></p>
+    <button onclick="getValorTotal()">Valor Total</button>
+    <button onclick="getFactura()">Factura</button>
+    <hr>
+
+    <div class="factura">
+        <table class="facture">
+            <tr>
+                <th><p id="name_sub"></p></th>
+                <th><p id="resname"></p></th>
+            </tr>
+            <tr>
+                <th class="izq" class="totall1"><p id="Producto"></p></th>
+                <th class="totall1"><p id="Cantidad"></p></th>
+                <th class="totall1"><p id="ValorU"></p></th>
+                <th class="der" class="totall1"><p id="ValorT"></p></th>
+            </tr>
+            <tr>
+                <th class="izq"><p id="resname_p1"></p></th>
+                <th><p id="rescantidad1"></p></th>
+                <th><p id="resvalor1"></p></th>
+                <th class="der"><p id="total1"></p></th>
+            </tr>
+            <tr>
+                <th class="izq"><p id="resname_p2"></p></th>
+                <th><p id="rescantidad2"></p></th>
+                <th><p id="resvalor2"></p></th>
+                <th class="der"><p id="total2"></p></th>
+            </tr>
+            <tr>
+                <th class="izq" colspan="2"><p id="TotalT"></p></th>
+                <th class="der" colspan="2"><p id="todototal"></p></th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
