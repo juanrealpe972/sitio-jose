@@ -17,7 +17,7 @@ function getValorTotal(){
 function getFactura(){
     let name_product, name_p1, tipo_1, cantidad1, valor1, restotal1, name_p2, tipo_2 , cantidad2, valor2, restotal2, todototal
 
-    document.getElementById("name_sub").innerHTML = "Nombre del subproyecto"
+    document.getElementById("name_sub").innerHTML = "Nombre del Subproyecto"
 
     name_product = document.getElementById ("name_product").value
     document.getElementById("resname").innerText = name_product
