@@ -15,7 +15,7 @@ function getValorTotal(){
     document.getElementById("restotal").innerHTML = "<div> Valor total "+ restotaltodo +"</div>"
 }
 function getFactura(){
-    let name_product;
+    let name_product, name_p1, tipo_1, cantidad1, valor1, restotal1, name_p2, tipo_2 , cantidad2, valor2, restotal2, todototal
 
     document.getElementById("name_sub").innerHTML = "Nombre del subproyecto"
 
@@ -23,12 +23,16 @@ function getFactura(){
     document.getElementById("resname").innerText = name_product
 
     document.getElementById("Producto").innerHTML = "Producto"
+    document.getElementById("Tipo").innerHTML = "Tipo"
     document.getElementById("Cantidad").innerHTML = "Cantidad"
     document.getElementById("ValorU").innerHTML = "Valor Unitario"
     document.getElementById("ValorT").innerHTML = "Valor Total"
 
     name_p1 = document.getElementById("name_p1").value
     document.getElementById("resname_p1").innerText = name_p1
+
+    tipo_1 = document.getElementById("tipo1").value 
+    document.getElementById("restipo1").innerText = tipo_1
 
     cantidad1 = document.getElementById("cantidad1").value
     document.getElementById("rescantidad1").innerText =cantidad1
@@ -41,6 +45,9 @@ function getFactura(){
 
     name_p2 = document.getElementById("name_p2").value
     document.getElementById("resname_p2").innerText = name_p2
+    
+    tipo_2 = document.getElementById("tipo2").value
+    document.getElementById("restipo2").innerText = tipo_2
 
     cantidad2 = document.getElementById("cantidad2").value
     document.getElementById("rescantidad2").innerText =cantidad2

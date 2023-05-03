@@ -37,3 +37,8 @@ button{
     padding: 7px 20px;
     border-radius: 10px;
 }
+#tipo1, #tipo2{
+    width: 180px;   
+    height: 21px;
+    color: rgb(139, 138, 138);
+}
