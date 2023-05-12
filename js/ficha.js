@@ -1,5 +1,7 @@
 function almacenarData(){
     let nom,lin,ant,act,mod,gen,des,har,sof,otr,fun,adi,cli
+
+    pro = document.getElementById("proyecto").value
     nom = document.getElementById("nombre").value
     lin = document.getElementById("linea").value
     ant = document.getElementById("anterior").value
@@ -14,6 +16,7 @@ function almacenarData(){
     adi = document.getElementById("adicional").value
     cli = document.getElementById("cliente").value
 
+    localStorage.setItem("Proyecto", pro);
     localStorage.setItem("Nombre", nom);
     localStorage.setItem("Linea", lin);
     localStorage.setItem("Anterior", ant);
@@ -28,6 +31,7 @@ function almacenarData(){
     localStorage.setItem("Adicional", adi);
     localStorage.setItem("Cliente", cli);
 
+    document.getElementById("proyecto").value =" ";
     document.getElementById("nombre").value ="";
     document.getElementById("linea").value ="";
     document.getElementById("anterior").value ="";
@@ -41,7 +45,9 @@ function almacenarData(){
     document.getElementById("funcional").value ="";
     document.getElementById("adicional").value ="";
     document.getElementById("cliente").value ="";
+    
 }
+const z = document.querySelector("#datoProyecto")
 const a = document.querySelector("#datoProducto")
 const b = document.querySelector("#datoLinea")
 const c = document.querySelector("#datoAnterior")
@@ -57,8 +63,9 @@ const l = document.querySelector("#datoAdicional")
 const m = document.querySelector("#datoCliente")
 
 function cargarData(){
-    let nom,lin,ant,act,mod,gen,des,har,sof,otr,fun,adi,cli;
+    let pro,nom,lin,ant,act,mod,gen,des,har,sof,otr,fun,adi,cli;
 
+    pro = localStorage.getItem("Proyecto")
     nom = localStorage.getItem("Nombre");
     lin = localStorage.getItem("Linea");
     ant = localStorage.getItem("Anterior");
@@ -73,6 +80,7 @@ function cargarData(){
     adi = localStorage.getItem("Adicional");
     cli = localStorage.getItem("Cliente");
 
+    z.innerHTML = pro;
     a.innerHTML = nom;
     b.innerHTML = lin;
     c.innerHTML = ant;
@@ -87,3 +95,6 @@ function cargarData(){
     l.innerHTML = adi;
     m.innerHTML = cli;
 }
+
+// document.getElementById('resetBtn').addEventListener('click', function() {
+//     localStorage.clear(); });

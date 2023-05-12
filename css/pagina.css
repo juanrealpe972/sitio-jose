@@ -7,13 +7,15 @@ body{
     height: 100vh;
     background-color: rgb(183, 205, 206);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .container {
     margin-top: 50px;
     background-color: rgb(236, 241, 245);
-    width: 450px;
-    height: 650px;
+    width: 800px;
+    height: 730px;
     border-radius: 30px;
 }
 h3{
@@ -23,4 +25,20 @@ h3{
 p{
     margin: 2px 15px;
     font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: brown;
+    color: white;
+    width: 70px;
+    height: 40px;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+a:hover {
+    background-color: white;
+    color: brown;
 }
