@@ -1,42 +1,50 @@
-function getFicha(){
-    let nom_producto = document.getElementById("nom_producto").value
-    document.getElementById("resproduct").innerText = nom_producto
+const a = document.querySelector("#datoProducto")
+const b = document.querySelector("#datoLinea")
+const c = document.querySelector("#datoAnterior")
+const d = document.querySelector("#datoActual")
+const e = document.querySelector("#datoModulo")
+const f = document.querySelector("#datoGeneral")
+const g = document.querySelector("#datoDescripcion")
+const h = document.querySelector("#datoHadware")
+const i = document.querySelector("#datoSoftware")
+const j = document.querySelector("#datoOtro")
+const k = document.querySelector("#datoFuncional")
+const l = document.querySelector("#datoAdicional")
+const m = document.querySelector("#datoCliente")
 
-    let linea = document.getElementById("linea").value
-    document.getElementById("reslinea").innerText = linea
+function cargarData(){
+    let nombre,line,ante,actu,modul,gener,descr,hadwa,sofwa,oteo,funci,adici,clien
 
-    let versiones = document.getElementById("versiones").value
-    document.getElementById("resanterior").innerText = versiones
+    nombre = localStorage.getItem("nombre");
+    line = localStorage.getItem("linea");
+    ante = localStorage.getItem("anterior");
+    actu = localStorage.getItem("actual");
+    modul = localStorage.getItem("modulo");
+    gener = localStorage.getItem("general");
+    descr = localStorage.getItem("descripcion");
+    hadwa = localStorage.getItem("hadware");
+    sofwa = localStorage.getItem("software");
+    oteo = localStorage.getItem("otro");
+    funci = localStorage.getItem("funcional");
+    adici = localStorage.getItem("adicional");
+    clien = localStorage.getItem("cliente");
 
-    let version = document.getElementById("version").value
-    document.getElementById("resactual").innerText = version
 
-    let modulo = document.getElementById("modulo").value
-    document.getElementById("resmodulo").innerText = modulo
-
-    let descripcion = document.getElementById("descripcion").value
-    document.getElementById("resdescripcion").innerText = descripcion
-
-    let descripciones = document.getElementById("descripciones").value
-    document.getElementById("resdescripciones").innerText = descripciones
-
-    let productor = document.getElementById("productor").value
-    document.getElementById("resproductor").innerText = productor
-
-    let producto = document.getElementById("producto").value
-    document.getElementById("resproducto").innerText = producto
-
-    let otro = document.getElementById("otro").value
-    document.getElementById("resotro").innerText = otro
-
-    let requerimiento = document.getElementById("requerimiento").value
-    document.getElementById("resrequerimiento").innerText = requerimiento
-
-    let requerimientos = document.getElementById("requerimientos").value
-    document.getElementById("resrequerimientos").innerText = requerimientos
-
-    let cliente = document.getElementById("cliente").value
-    document.getElementById("rescliente").innerText = cliente
+    a.innerHTML = nombre;
+    b.innerHTML = linea;
+    c.innerHTML = anterior;
+    d.innerHTML = actual;
+    e.innerHTML = modulo;
+    f.innerHTML = general;
+    g.innerHTML = descripcion;
+    h.innerHTML = hadware;
+    i.innerHTML = sofware;
+    j.innerHTML = otro;
+    k.innerHTML = funcional;
+    l.innerHTML = adicional;
+    m.innerHTML = cliente;
 }
+
+cargarData()
 
 

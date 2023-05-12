@@ -9,75 +9,31 @@
    <script src="js/ficha.js"></script>
    </head>
 <body>
-   <h1>FORMATO DE FICHA TECNICA</h1>
-   <h3>Caracteristicas del producto</h3>
+   <h1>Sub-poryecto Simón</h1>
+   <h2>CARACTERÍSTICAS DEL PRODUCTO</h2>
+   <input type="text" id="nombre" placeholder="Nombre producto"><br><br>
+   <input type="text" id="linea" placeholder="Linea de producto"><br><br>
+   <input type="text" id="anterior" placeholder="Versiones anteriores"><br><br>
+   <input type="text"  id="actual" placeholder="version Actual"><br><br>
+   <input type="text"  id="modulo" placeholder="Módulo"><br><br>
+   <h2>DESCRIPCIÓN DEL PRODUCTO</h2>
+   <input type="text"  id="general" placeholder="Descripcion general"><br><br>
+   <h2>ARQUITECTURA</h2>
+   <input type="text"  id="descripcion" placeholder="Descripcion"><br><br>
+   <h2>REQUERIMIENTOS DEL PRODUCTO</h2>
+   <input type="text"  id="hadware" placeholder="Hadware"><br><br>
+   <input type="text"  id="software" placeholder="Software"><br><br>
+   <input type="text"  id="otro" placeholder="Otro"><br><br>
+   <h2>REQUERIMIENTOS</h2>
+   <input type="text"  id="funcional" placeholder="Requerimientos funcionales generales"><br><br>
+   <input type="text"  id="adicional" placeholder="Requerimiento adicionales"><br><br>
+   <input type="text" id="cliente" placeholder="cliente"><br><br>
+   <button onclick="almacenarData()">Guardar</button>
+   <hr>
    <p>
-      <h4>Nombre del Producto:</h4>
-      <input type="text" id="nom_producto" placeholder="Nombre del Producto">
+   <button onclick="cargarData()">Cargar elementos</button>
+   <a href="segundo.html" target="_blank">continuar</a>
    </p>
-   <p>
-      <h4> Linea de produccion:</h4>
-      <input type="text" id="linea" placeholder="Nombre del cliente">
-   </p>
-   <p>
-      <h4> Versiones Anteriores:</h4>
-   <input type="text" id="versiones" placeholder="Numero de Producto">
-   </p>
-   <p>
-      <h4> Version Actual:</h4>
-   <input type="text" id="version" placeholder="Numero de Producto">
-   </p> 
-   <p>
-      <h4> Módulo:</h4>
-   <input type="text" id="modulo" placeholder="Nombre Técnico">
-   </p>
-   <p>
-      <h4> Descripcion general:</h4>
-   <input type="text" id="descripcion" placeholder="Descripcion General">
-   </p>
-   <p>
-      <h4> Descripcion:</h4>
-   <input type="text" id="descripciones" placeholder="Tipo de Arquitectura">
-   </p>
-   <p>
-      <h4> Hadware:</h4>
-   <input type="text" id="productor" placeholder="Requerimiento físico">
-   </p>
-   <p>
-      <h4> Software:</h4>
-   <input type="text" id="producto" placeholder="Requerimiento lógico">
-   </p>
-   <p>
-      <h4> Otro:</h4>
-   <input type="text" id="otro" placeholder="Recomendaciones sistema">
-   </p>
-   <p>
-      <h4> Requerimientos funcionales generales:</h4>
-   <input type="text" id="requerimiento" placeholder="Requerimiento sistema">
-   </p>
-   <h4> Requerimientos adicionales:</h4>
-   <input type="text" id="requerimientos" placeholder="Funciones adicionales">
-   </p>
-   <p>
-      <h4> Cliente de producto:</h4>
-   <input type="text" id="cliente" placeholder="Caracteristicas cliente">
-   </p>
-   <p>
-      <button onclick="getFicha()">Enviar</button>
-   </p>
-   <p id="resproduct"></p>
-   <p id="reslinea" ></p>
-   <p id="resanterior" ></p>
-   <p id="resactual"></p>
-   <p id="resmodulo"></p>
-   <p id="resdescripcion"></p>
-   <p id="resdescripciones"></p>
-   <p id="resproductor"></p>
-   <p id="resproducto"></p>
-   <p id="resotro"></p>
-   <p id="resrequerimiento"></p>
-   <p id="resrequerimientos"></p>
-   <p id="rescliente"></p>
-   <a href="index.html">Inicio</a>
+   <hr>
 </body>
 </html>
