@@ -24,21 +24,21 @@ function almacenarData(){
     localStorage.setItem("Hadware", had);
     localStorage.setItem("Software", sof);
     localStorage.setItem("Otro", otr);
-    localStorage.setItem("funcional", fun);
+    localStorage.setItem("Funcional", fun);
     localStorage.setItem("Adicional", adi);
     localStorage.setItem("Cliente", cli);
 
-    document.getElementById("Nombre").value ="";
-    document.getElementById("Linea").value ="";
-    document.getElementById("Anterior").value ="";
-    document.getElementById("Actual").value ="";
-    document.getElementById("Modulo").value ="";
-    document.getElementById("General").value ="";
-    document.getElementById("Descripcion").value ="";
-    document.getElementById("Hadware").value ="";
-    document.getElementById("Software").value ="";
-    document.getElementById("Otro").value ="";
-    document.getElementById("Funcional").value ="";
-    document.getElementById("Adicional").value ="";
-    document.getElementById("Cliente").value ="";
+    document.getElementById("nombre").value ="";
+    document.getElementById("linea").value ="";
+    document.getElementById("anterior").value ="";
+    document.getElementById("actual").value ="";
+    document.getElementById("modulo").value ="";
+    document.getElementById("general").value ="";
+    document.getElementById("descripcion").value ="";
+    document.getElementById("hadware").value ="";
+    document.getElementById("software").value ="";
+    document.getElementById("otro").value ="";
+    document.getElementById("funcional").value ="";
+    document.getElementById("adicional").value ="";
+    document.getElementById("cliente").value ="";
 }

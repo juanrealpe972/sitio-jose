@@ -44,6 +44,6 @@ function cargarData(){
     m.innerHTML = cli;
 }
 
-cargarData()
-
-
+function cargarData (){
+    
+}
