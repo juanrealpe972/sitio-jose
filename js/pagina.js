@@ -1,32 +1,32 @@
 function almacenarData(){
-    let nom,line,anterio,actua,modu,gene,descrip,hadwa,softwa,oteo,funci,adic,clien
+    let nom,lin,ant,act,mod,gen,des,had,sof,otr,fun,adi,cli
     nom = document.getElementById("nombre").value
-    line = document.getElementById("linea").value
-    anterio = document.getElementById("anterior").value
-    actua = document.getElementById("actual").value
-    modu = document.getElementById("modulo").value
-    gene = document.getElementById("general").value
-    descrip = document.getElementById("descripcion").value
-    hadwa = document.getElementById("hadware").value
-    softwa = document.getElementById("software").value
-    oteo = document.getElementById("otro").value
-    funci = document.getElementById("funcional").value
-    adic = document.getElementById("adicional").value
-    clien = document.getElementById("cliente").value
+    lin = document.getElementById("linea").value
+    ant = document.getElementById("anterior").value
+    act = document.getElementById("actual").value
+    mod = document.getElementById("modulo").value
+    gen = document.getElementById("general").value
+    des = document.getElementById("descripcion").value
+    had = document.getElementById("hadware").value
+    sof = document.getElementById("software").value
+    otr = document.getElementById("otro").value
+    fun = document.getElementById("funcional").value
+    adi = document.getElementById("adicional").value
+    cli = document.getElementById("cliente").value
 
     localStorage.setItem("Nombre", nom);
-    localStorage.setItem("Linea", line);
-    localStorage.setItem("Anterior", anterio);
-    localStorage.setItem("Actual", actua);
-    localStorage.setItem("Modulo", modu);
-    localStorage.setItem("General", gene);
-    localStorage.setItem("Descripcion", descrip);
-    localStorage.setItem("Hadware", hadwa);
-    localStorage.setItem("Software", softwa);
-    localStorage.setItem("Otro", oteo);
-    localStorage.setItem("funcional", funci);
-    localStorage.setItem("Adicional", adic);
-    localStorage.setItem("Cliente", clien);
+    localStorage.setItem("Linea", lin);
+    localStorage.setItem("Anterior", ant);
+    localStorage.setItem("Actual", act);
+    localStorage.setItem("Modulo", mod);
+    localStorage.setItem("General", gen);
+    localStorage.setItem("Descripcion", des);
+    localStorage.setItem("Hadware", had);
+    localStorage.setItem("Software", sof);
+    localStorage.setItem("Otro", otr);
+    localStorage.setItem("funcional", fun);
+    localStorage.setItem("Adicional", adi);
+    localStorage.setItem("Cliente", cli);
 
     document.getElementById("Nombre").value ="";
     document.getElementById("Linea").value ="";

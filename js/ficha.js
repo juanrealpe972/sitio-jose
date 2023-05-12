@@ -13,36 +13,35 @@ const l = document.querySelector("#datoAdicional")
 const m = document.querySelector("#datoCliente")
 
 function cargarData(){
-    let nombre,line,ante,actu,modul,gener,descr,hadwa,sofwa,oteo,funci,adici,clien
+    let nom,lin,ant,act,mod,gen,des,had,sof,otr,fun,adi,cli
 
-    nombre = localStorage.getItem("nombre");
-    line = localStorage.getItem("linea");
-    ante = localStorage.getItem("anterior");
-    actu = localStorage.getItem("actual");
-    modul = localStorage.getItem("modulo");
-    gener = localStorage.getItem("general");
-    descr = localStorage.getItem("descripcion");
-    hadwa = localStorage.getItem("hadware");
-    sofwa = localStorage.getItem("software");
-    oteo = localStorage.getItem("otro");
-    funci = localStorage.getItem("funcional");
-    adici = localStorage.getItem("adicional");
-    clien = localStorage.getItem("cliente");
+    nom = localStorage.getItem("nombre");
+    lin = localStorage.getItem("linea");
+    ant = localStorage.getItem("anterior");
+    act = localStorage.getItem("actual");
+    mod = localStorage.getItem("modulo");
+    gen = localStorage.getItem("general");
+    des = localStorage.getItem("descripcion");
+    had = localStorage.getItem("hadware");
+    sof = localStorage.getItem("software");
+    otr = localStorage.getItem("otro");
+    fun = localStorage.getItem("funcional");
+    adi = localStorage.getItem("adicional");
+    cli = localStorage.getItem("cliente");
 
-
-    a.innerHTML = nombre;
-    b.innerHTML = linea;
-    c.innerHTML = anterior;
-    d.innerHTML = actual;
-    e.innerHTML = modulo;
-    f.innerHTML = general;
-    g.innerHTML = descripcion;
-    h.innerHTML = hadware;
-    i.innerHTML = sofware;
-    j.innerHTML = otro;
-    k.innerHTML = funcional;
-    l.innerHTML = adicional;
-    m.innerHTML = cliente;
+    a.innerHTML = nom;
+    b.innerHTML = lin;
+    c.innerHTML = ant;
+    d.innerHTML = act;
+    e.innerHTML = mod;
+    f.innerHTML = gen;
+    g.innerHTML = des;
+    h.innerHTML = had;
+    i.innerHTML = sof;
+    j.innerHTML = otr;
+    k.innerHTML = fun;
+    l.innerHTML = adi;
+    m.innerHTML = cli;
 }
 
 cargarData()
