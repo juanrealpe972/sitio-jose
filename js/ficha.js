@@ -95,6 +95,3 @@ function cargarData(){
     l.innerHTML = adi;
     m.innerHTML = cli;
 }
-
-// document.getElementById('resetBtn').addEventListener('click', function() {
-//     localStorage.clear(); });
